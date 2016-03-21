@@ -18,7 +18,7 @@
 
 - name: apt packages
   become: yes
-  apt: pkg={{item}} state=latest update_cache=yes
+  apt: pkg={{item}} state=latest update_cache=yes cache_valid_time=600
   with_items:
     - build-essential
     - python-pip
@@ -33,8 +33,14 @@
     - emacs24
     - htop
     - dropbox
+    - mercurial
 
 - name: upgrade pip
   become: yes
   pip: name=pip extra_args=--upgrade
 
+- name: python packages
+  become: yes
+  pip: name={{item}}
+  with_items:
+    - ipython

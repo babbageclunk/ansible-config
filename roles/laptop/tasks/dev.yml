@@ -1,0 +1,17 @@
+---
+
+- name: make directories
+  file: path=~/{{item}} state=directory
+  with_items:
+    - dev
+    - scratch
+    - tmp
+
+- name: get emacs-config
+  hg: repo=ssh://babbageclunk.com/hg/emacs-config dest=~/dev/emacs-config
+
+- name: put .emacs in place
+  file: dest=~/{{item.dest}} src=~/dev/{{item.src}} state=link force=yes
+  with_items:
+    - {src: emacs-config/.emacs, dest: .emacs}
+    - {src: emacs-config, dest: .emacs.d}

@@ -1,4 +1,5 @@
 ---
 - include: packages.yml
-- include: desktop-setup.yml
 - include: config.yml
+- include: desktop-setup.yml
+- include: dev.yml
