@@ -1,0 +1,3 @@
+---
+- name: turn on workspaces
+  gsettings: schema=org.compiz.core:/org/compiz/profiles/unity/plugins/core/ key=hsize value=2

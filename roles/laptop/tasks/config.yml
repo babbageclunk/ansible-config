@@ -1,0 +1,7 @@
+---
+
+- name: config files
+  file: dest=~/{{ item }} force=yes state=link src={{ ansible_env.PWD }}/roles/laptop/files/{{ item }}
+  with_items:
+    - .gitconfig
+    - .gitignore_global
