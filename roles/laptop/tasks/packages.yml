@@ -28,6 +28,8 @@
     - libxslt1-dev
     - libyaml-dev
     - git
+    - git-gui
+    - gitk
     - emacs24
     - htop
     - dropbox
