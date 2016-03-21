@@ -5,3 +5,6 @@
   with_items:
     - .gitconfig
     - .gitignore_global
+    - .bashrc
+    - .bash_env
+    - .bash_aliases
