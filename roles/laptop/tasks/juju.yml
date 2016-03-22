@@ -31,9 +31,20 @@
 
 - name: switch origin to my fork
   command: git remote set-url origin git@github.com:babbageclunk/juju.git
+  args:
+    chdir: ~/dev/go/src/github.com/juju/juju
+
+- name: list remotes
+  command: git remote -v
+  args:
+    chdir: ~/dev/go/src/github.com/juju/juju
+  register: juju_remotes
 
 - name: add upstream repo
   command: git remote add upstream https://github.com/juju/juju.git
+  when: juju_remotes.stdout.find('upstream') == -1
+  args:
+    chdir: ~/dev/go/src/github.com/juju/juju
 
 - name: add pre-push hook
   file:
