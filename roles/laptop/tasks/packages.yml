@@ -7,7 +7,6 @@
     - {keyserver: keyserver.ubuntu.com, id: 1C61A2656FB57B7E4DE0F4C1FC918B335044912E}  # Dropbox
     - {keyserver: keyserver.ubuntu.com, id: 4CCA1EAF950CEE4AB83976DCA040830F7FAC5991}  # Google
 
-
 - name: apt repos
   become: yes
   apt_repository: repo='{{ item }}' state=present update_cache=yes
@@ -44,6 +43,7 @@
     - google-chrome-stable
     - powertop
     - pm-utils
+    - virt-manager
 
 - name: upgrade pip
   become: yes
@@ -54,3 +54,4 @@
   pip: name={{item}}
   with_items:
     - ipython
+    - ansible
