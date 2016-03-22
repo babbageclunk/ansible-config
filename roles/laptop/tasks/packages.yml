@@ -37,6 +37,7 @@
     - libpcre3-dev
     - cmake
     - bzr
+    - indicator-multiload
 
 - name: upgrade pip
   become: yes
