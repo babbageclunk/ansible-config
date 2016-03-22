@@ -1,6 +1,42 @@
 ---
 
+- name: get godeps
+  command: go get launchpad.net/godeps
+  args:
+    creates: ~/dev/go/bin/godeps
+
 - name: get juju source
-  command: go get -d -v github.com/juju/juju/...
+  command: go get -d github.com/juju/juju/...
   ignore_errors: yes
   # For some reason, it complains about (I think) pinned dependencies between azure-sdk-for-go and go-autorest.
+
+- name: update godeps
+  command: godeps -u dependencies.tsv
+  args:
+    chdir: ~/dev/go/src/github.com/juju/juju
+
+- name: get juju source
+  command: go get -d github.com/juju/juju/...
+  # There's bound to be a better way to do this.
+
+- name: install juju dependencies
+  command: make install-dependencies
+  args:
+    chdir: ~/dev/go/src/github.com/juju/juju
+
+- name: install juju
+  command: go install github.com/juju/juju/...
+  args:
+    creates: ~/dev/go/bin/juju
+
+- name: switch origin to my fork
+  command: git remote set-url origin git@github.com:babbageclunk/juju.git
+
+- name: add upstream repo
+  command: git remote add upstream https://github.com/juju/juju.git
+
+- name: add pre-push hook
+  file:
+    src: ~/dev/go/src/github.com/juju/juju/scripts/pre-push.bash
+    dest: ~/dev/go/src/github.com/juju/juju/.git/hooks/pre-push
+    state: link
