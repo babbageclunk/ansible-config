@@ -34,6 +34,8 @@
     - htop
     - dropbox
     - mercurial
+    - libpcre3-dev
+    - cmake
 
 - name: upgrade pip
   become: yes

@@ -7,6 +7,25 @@
     - scratch
     - tmp
 
+- name: get editorconfig core
+  git:
+    repo: https://github.com/editorconfig/editorconfig-core-c.git
+    dest: ~/dev/editorconfig-core-c
+    version: 8e488cb3e78924d4c66c4cd39649b4c77932ad1c
+
+- name: build editorconfig core
+  command: cmake .
+  args:
+    chdir: ~/dev/editorconfig-core-c
+    creates: ~/dev/editorconfig-core-c/bin/editorconfig
+
+- name: install editorconfig core
+  become: yes
+  command: make install
+  args:
+    chdir: "{{ansible_env.HOME}}/dev/editorconfig-core-c"
+    creates: /usr/local/bin/editorconfig
+
 - name: get emacs-config
   hg: repo=ssh://babbageclunk.com/hg/emacs-config dest=~/dev/emacs-config
 
