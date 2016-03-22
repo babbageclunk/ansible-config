@@ -1,9 +1,12 @@
 ---
 
-- name: get godeps
-  command: go get launchpad.net/godeps
+- name: get go tools
+  command: go get {{item.src}}
   args:
-    creates: ~/dev/go/bin/godeps
+    creates: ~/dev/go/bin/{{item.bin}}
+  with_items:
+    - {src: launchpad.net/godeps, bin: godeps}
+    - {src: github.com/rogpeppe/godef, bin: godef}
 
 - name: get juju source
   command: go get -d github.com/juju/juju/...
@@ -40,7 +43,7 @@
     chdir: ~/dev/go/src/github.com/juju/juju
   register: juju_remotes
 
-- name: add upstream repo
+- name: maybe add upstream repo
   command: git remote add upstream https://github.com/juju/juju.git
   when: juju_remotes.stdout.find('upstream') == -1
   args:
