@@ -5,12 +5,15 @@
   apt_key: keyserver={{ item.keyserver }} id={{ item.id }}
   with_items:
     - {keyserver: keyserver.ubuntu.com, id: 1C61A2656FB57B7E4DE0F4C1FC918B335044912E}  # Dropbox
+    - {keyserver: keyserver.ubuntu.com, id: 4CCA1EAF950CEE4AB83976DCA040830F7FAC5991}  # Google
+
 
 - name: apt repos
   become: yes
   apt_repository: repo='{{ item }}' state=present update_cache=yes
   with_items:
     - 'deb http://linux.dropbox.com/ubuntu wily main'
+    - 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main'
 
 - name: build dependencies
   become: yes
@@ -38,6 +41,7 @@
     - cmake
     - bzr
     - indicator-multiload
+    - google-chrome-stable
 
 - name: upgrade pip
   become: yes
