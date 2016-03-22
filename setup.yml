@@ -3,4 +3,5 @@
 - hosts: localhost
   connection: local
   roles:
+    - {role: joshualund.golang, become: yes}
     - laptop
