@@ -42,6 +42,8 @@
     - bzr
     - indicator-multiload
     - google-chrome-stable
+    - powertop
+    - pm-utils
 
 - name: upgrade pip
   become: yes
