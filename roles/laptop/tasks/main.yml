@@ -3,3 +3,4 @@
 - include: config.yml
 - include: desktop-setup.yml
 - include: dev.yml
+- include: juju.yml

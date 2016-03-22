@@ -1,0 +1,6 @@
+---
+
+- name: get juju source
+  command: go get -d -v github.com/juju/juju/...
+  ignore_errors: yes
+  # For some reason, it complains about (I think) pinned dependencies between azure-sdk-for-go and go-autorest.

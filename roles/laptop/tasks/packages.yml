@@ -36,6 +36,7 @@
     - mercurial
     - libpcre3-dev
     - cmake
+    - bzr
 
 - name: upgrade pip
   become: yes
