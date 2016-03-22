@@ -18,7 +18,7 @@
 
 - name: apt packages
   become: yes
-  apt: pkg={{item}} state=latest update_cache=yes cache_valid_time=600
+  apt: pkg={{item}} state=latest update_cache=yes cache_valid_time=3600
   with_items:
     - build-essential
     - python-pip
