@@ -50,6 +50,7 @@
     - tmate
     - qemu-system
     - libvirt-bin
+    - maas-cli
 
 - name: upgrade pip
   become: yes
