@@ -61,3 +61,6 @@
   with_items:
     - ipython
     - ansible
+    - virtualenv
+    - jedi
+    - pyflakes
