@@ -48,6 +48,8 @@
     - tmux
     - software-properties-common
     - tmate
+    - qemu-system
+    - libvirt-bin
 
 - name: upgrade pip
   become: yes
