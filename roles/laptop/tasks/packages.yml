@@ -13,6 +13,7 @@
   with_items:
     - 'deb http://linux.dropbox.com/ubuntu wily main'
     - 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main'
+    - ppa:tmate.io/archive
 
 - name: build dependencies
   become: yes
@@ -44,6 +45,9 @@
     - powertop
     - pm-utils
     - virt-manager
+    - tmux
+    - software-properties-common
+    - tmate
 
 - name: upgrade pip
   become: yes
