@@ -51,6 +51,9 @@
     - qemu-system
     - libvirt-bin
     - maas-cli
+    - openssh-server
+    - unity-tweak-tool
+    - qemu-kvm
 
 - name: upgrade pip
   become: yes
