@@ -9,3 +9,4 @@
     - .bash_env
     - .bash_aliases
     - .hgrc
+    - .tmux.conf
