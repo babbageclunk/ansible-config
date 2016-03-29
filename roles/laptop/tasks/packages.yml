@@ -54,6 +54,7 @@
     - openssh-server
     - unity-tweak-tool
     - qemu-kvm
+    - cloc
 
 - name: upgrade pip
   become: yes
