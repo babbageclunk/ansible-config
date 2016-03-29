@@ -125,3 +125,6 @@ if [[ -s ~/.boto ]]; then
   export AWS_EC2_REGION=$(grep ec2_region_name ~/.boto | awk '{print $3;}')
   export AWS_DEFAULT_REGION=$(grep ec2_region_name ~/.boto | awk '{print $3;}')
 fi
+
+source ~/dev/bash-git-prompt/gitprompt.sh
+GIT_PROMPT_ONLY_IN_REPO=1

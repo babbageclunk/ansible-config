@@ -34,3 +34,9 @@
   with_items:
     - {src: emacs-config/.emacs, dest: .emacs}
     - {src: emacs-config, dest: .emacs.d}
+
+- name: bash git prompt
+  git:
+    repo: https://github.com/magicmonty/bash-git-prompt.git
+    dest: ~/dev/bash-git-prompt
+    version: 134219ea4bb02b00ed18de5c85daf1724328c55c
