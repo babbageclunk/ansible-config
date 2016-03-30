@@ -10,3 +10,4 @@
     - .bash_aliases
     - .hgrc
     - .tmux.conf
+    - .profile
