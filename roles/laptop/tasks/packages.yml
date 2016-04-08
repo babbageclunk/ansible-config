@@ -55,6 +55,7 @@
     - unity-tweak-tool
     - qemu-kvm
     - cloc
+    - lxd
 
 - name: upgrade pip
   become: yes
