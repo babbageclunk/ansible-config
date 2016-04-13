@@ -72,3 +72,4 @@
     - virtualenv
     - jedi
     - pyflakes
+    - RBTools
