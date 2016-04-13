@@ -58,6 +58,7 @@
     - cloc
     - lxd
     - lxd-client
+    - xchat
 
 - name: upgrade pip
   become: yes
