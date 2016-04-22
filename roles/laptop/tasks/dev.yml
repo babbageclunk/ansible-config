@@ -18,10 +18,6 @@
       repo: https://github.com/magicmonty/bash-git-prompt.git
       dest: ~/dev/bash-git-prompt
       version: 134219ea4bb02b00ed18de5c85daf1724328c55c
-    -
-      repo: https://github.com/dominikh/yasnippet-go
-      dest: ~/dev/yasnippet-go
-      version: c92cc86aa4c094af64a01b6a24ac6ce10b717bb4
 
 - name: build editorconfig core
   command: cmake .
