@@ -59,6 +59,8 @@
     - lxd
     - lxd-client
     - xchat
+    - tree
+    - gtypist
 
 - name: upgrade pip
   become: yes
