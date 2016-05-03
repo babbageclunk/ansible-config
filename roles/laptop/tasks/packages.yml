@@ -59,7 +59,6 @@
     - cloc
     - lxd
     - lxd-client
-    - xchat
     - tree
     - gtypist
     - apt-cacher-ng
