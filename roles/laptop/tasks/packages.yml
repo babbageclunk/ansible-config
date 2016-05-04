@@ -63,6 +63,8 @@
     - gtypist
     - apt-cacher-ng
     - juju-mongodb3.2
+    - ipython3
+    - python3-pip
 
 - name: upgrade pip
   become: yes
