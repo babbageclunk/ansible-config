@@ -65,6 +65,8 @@
     - juju-mongodb3.2
     - ipython3
     - python3-pip
+    - linux-tools-common
+    - linux-tools-generic
 
 - name: upgrade pip
   become: yes
