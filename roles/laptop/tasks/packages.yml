@@ -66,6 +66,7 @@
     - juju-mongodb3.2
     - ipython3
     - python3-pip
+    - python3-venv
     - linux-tools-common
     - linux-tools-generic
     - eatmydata
