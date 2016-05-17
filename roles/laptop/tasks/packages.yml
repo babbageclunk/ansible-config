@@ -68,6 +68,7 @@
     - python3-pip
     - linux-tools-common
     - linux-tools-generic
+    - eatmydata
 
 - name: upgrade pip
   become: yes
