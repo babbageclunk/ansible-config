@@ -59,6 +59,7 @@
     - cloc
     - lxd
     - lxd-client
+    - zfsutils-linux
     - tree
     - gtypist
     - apt-cacher-ng
