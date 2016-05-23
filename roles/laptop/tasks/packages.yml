@@ -70,6 +70,7 @@
     - linux-tools-common
     - linux-tools-generic
     - eatmydata
+    - awesome
 
 - name: upgrade pip
   become: yes
