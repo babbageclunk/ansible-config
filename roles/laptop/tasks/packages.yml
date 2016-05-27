@@ -71,6 +71,7 @@
     - linux-tools-generic
     - eatmydata
     - awesome
+    - silversearcher-ag
 
 - name: upgrade pip
   become: yes
