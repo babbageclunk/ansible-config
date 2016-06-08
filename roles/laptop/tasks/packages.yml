@@ -93,3 +93,4 @@
   pip: name={{item}} executable=pip3
   with_items:
     - jupyter
+    - sshuttle
