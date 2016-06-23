@@ -73,6 +73,7 @@
     - awesome
     - silversearcher-ag
     - pavucontrol
+    - charm-tools
 
 - name: upgrade pip
   become: yes
