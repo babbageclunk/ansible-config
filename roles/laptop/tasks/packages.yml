@@ -74,6 +74,7 @@
     - silversearcher-ag
     - pavucontrol
     - charm-tools
+    - i3
 
 - name: upgrade pip
   become: yes
