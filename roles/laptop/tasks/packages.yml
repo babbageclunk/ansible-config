@@ -75,6 +75,7 @@
     - pavucontrol
     - charm-tools
     - i3
+    - mongodb-server
 
 - name: upgrade pip
   become: yes
