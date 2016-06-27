@@ -76,6 +76,7 @@
     - charm-tools
     - i3
     - mongodb-server
+    - daemontools
 
 - name: upgrade pip
   become: yes
