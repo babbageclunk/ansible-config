@@ -2,3 +2,4 @@ export EDITOR=emacsclient
 export GOPATH=${HOME}/dev/go
 export GOROOT=/usr/lib/go-1.6
 export PATH=${GOPATH}/bin:/usr/local/go/bin:$PATH
+export JUJU_MAKE_GODEPS=true
