@@ -77,6 +77,7 @@
     - i3
     - mongodb-server
     - daemontools
+    - xmlstarlet
 
 - name: upgrade pip
   become: yes
