@@ -78,6 +78,7 @@
     - mongodb-server
     - daemontools
     - xmlstarlet
+    - dstat
 
 - name: upgrade pip
   become: yes
