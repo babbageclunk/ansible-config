@@ -79,6 +79,7 @@
     - daemontools
     - xmlstarlet
     - dstat
+    - exuberant-ctags
 
 - name: upgrade pip
   become: yes
