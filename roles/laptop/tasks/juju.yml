@@ -10,6 +10,7 @@
   with_items:
     - {src: github.com/rogpeppe/godeps, bin: godeps}
     - {src: github.com/rogpeppe/godef, bin: godef}
+    - {src: golang.org/x/tools/cmd/guru, bin: guru}
 
 - name: get juju source
   command: go get -d github.com/juju/juju/...
