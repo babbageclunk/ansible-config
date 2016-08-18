@@ -57,3 +57,6 @@
     src: ~/dev/go/src/github.com/juju/juju/scripts/pre-push.bash
     dest: ~/dev/go/src/github.com/juju/juju/.git/hooks/pre-push
     state: link
+
+- name: make juju link dir
+  file: src=~/dev/go/src/github.com/juju/juju dest=~/juju state=link
