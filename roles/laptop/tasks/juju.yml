@@ -1,11 +1,14 @@
 ---
 
+- name: make go path
+  file: path=~/dev/go state=directory
+
 - name: get go tools
   command: go get {{item.src}}
   args:
     creates: ~/dev/go/bin/{{item.bin}}
   with_items:
-    - {src: launchpad.net/godeps, bin: godeps}
+    - {src: github.com/rogpeppe/godeps, bin: godeps}
     - {src: github.com/rogpeppe/godef, bin: godef}
 
 - name: get juju source
