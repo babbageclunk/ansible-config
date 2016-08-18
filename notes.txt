@@ -1,0 +1,12 @@
+To run:
+install ssh key
+    mkdir ~/.ssh
+    chmod 700 .ssh
+    cp id_rsa id_rsa.pub .ssh
+
+sudo apt install git python-pip
+sudo pip install ansible
+mkdir bootstrap
+cd bootstrap
+git clone git@github.com:babbageclunk/ansible-config.git
+ansible-playbook -K setup.yml
