@@ -82,6 +82,7 @@
     - dstat
     - exuberant-ctags
     - vim
+    - pastebinit
 
 - name: upgrade pip
   become: yes
