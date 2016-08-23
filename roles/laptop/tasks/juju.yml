@@ -63,3 +63,13 @@
 
 - name: make juju link dir
   file: src=~/dev/go/src/github.com/juju/juju dest=~/juju state=link
+
+- name: get kvm-setup utils
+  git: repo={{item.repo}} dest={{item.dest}}
+  with_items:
+    -
+      repo: git@github.com:babbageclunk/ubuntu-fan-hacks.git
+      dest: ~/dev/ubuntu-fan-hacks
+    -
+      repo: https://github.com/frobware/kvm-maas.git
+      dest: ~/dev/kvm-maas
