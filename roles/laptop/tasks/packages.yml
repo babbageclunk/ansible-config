@@ -83,6 +83,9 @@
     - exuberant-ctags
     - vim
     - pastebinit
+    - python-boto
+    - euca2ools
+    - snapcraft
 
 - name: upgrade pip
   become: yes

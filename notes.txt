@@ -10,3 +10,6 @@ mkdir bootstrap
 cd bootstrap
 git clone git@github.com:babbageclunk/ansible-config.git
 ansible-playbook -K setup.yml
+
+Things that need to be added:
+Setting up a zfs pool?
