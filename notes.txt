@@ -4,7 +4,7 @@ install ssh key
     chmod 700 .ssh
     cp id_rsa id_rsa.pub .ssh
 
-sudo apt install git python-pip
+sudo apt install git python-pip libffi-dev libssl-dev
 sudo pip install ansible
 mkdir bootstrap
 cd bootstrap
