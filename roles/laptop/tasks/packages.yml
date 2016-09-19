@@ -86,6 +86,7 @@
     - python-boto
     - euca2ools
     - snapcraft
+    - network-manager-openvpn-gnome
 
 - name: upgrade pip
   become: yes
