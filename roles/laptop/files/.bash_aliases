@@ -9,3 +9,5 @@ alias lxcl='lxc list | grep -v -e -------'
 function lxbash() {
     lxc exec $1 bash
 }
+
+alias jst='watch --color juju status --color'
