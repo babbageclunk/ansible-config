@@ -88,6 +88,8 @@
     - euca2ools
     - snapcraft
     - network-manager-openvpn-gnome
+    - graphviz
+    - indicator-keylock
 
 - name: upgrade pip
   become: yes
