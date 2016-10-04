@@ -90,6 +90,7 @@
     - network-manager-openvpn-gnome
     - graphviz
     - indicator-keylock
+    - binutils
 
 - name: upgrade pip
   become: yes
