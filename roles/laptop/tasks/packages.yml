@@ -106,6 +106,7 @@
     - jedi
     - pyflakes
     - RBTools
+    - pywinrm
 
 - name: python3 packages
   become: yes
