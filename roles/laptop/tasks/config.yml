@@ -11,3 +11,6 @@
     - .hgrc
     - .tmux.conf
     - .profile
+
+- name: ssh config
+  file: dest=~/.ssh/config force=yes state=link src={{ ansible_env.PWD }}/roles/laptop/files/ssh_config
