@@ -1,5 +1,5 @@
 export EDITOR=emacsclient
-export GOPATH=${HOME}/dev/go
+export GOPATH=/opt/go
 export GOROOT=/usr/local/go
 export PATH=${GOPATH}/bin:/usr/local/go/bin:$PATH
 export JUJU_MAKE_GODEPS=true
