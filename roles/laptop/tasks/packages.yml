@@ -107,6 +107,7 @@
     - pyflakes
     - RBTools
     - pywinrm
+    - dateutil
 
 - name: python3 packages
   become: yes
