@@ -3,4 +3,4 @@ export GOPATH=/opt/go
 export GOROOT=/usr/local/go
 export PATH=${GOPATH}/bin:/usr/local/go/bin:$PATH
 export JUJU_MAKE_GODEPS=true
-export JUJU_DEV_FEATURE_FLAGS=migration,developer-mode
+export JUJU_DEV_FEATURE_FLAGS=cross-model,developer-mode
