@@ -16,6 +16,7 @@
     - ppa:tmate.io/archive
     - ppa:ubuntu-lxc/lxd-stable
     - ppa:maas-maintainers/experimental3
+    - ppa:jconti/recent-notifications
     - 'deb-src http://gb.archive.ubuntu.com/ubuntu/ xenial main restricted'
     - 'deb-src http://gb.archive.ubuntu.com/ubuntu/ xenial-updates main restricted'
 
@@ -91,6 +92,7 @@
     - graphviz
     - indicator-keylock
     - binutils
+    - indicator-notifications
 
 - name: upgrade pip
   become: yes
