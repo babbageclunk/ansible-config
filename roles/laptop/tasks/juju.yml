@@ -1,7 +1,7 @@
 ---
 
 - name: make go path
-  file: path=~/dev/go state=directory
+  file: path=~/dev/go state=link src=/opt/go
 
 - name: get go tools
   command: go get {{item.src}}
