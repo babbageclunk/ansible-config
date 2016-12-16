@@ -1,4 +1,4 @@
-Host xenial-slave.vapour.ws wily-slave.vapour.ws trusty-slave.vapour.ws precise-slave.vapour.ws juju-core-slave.vapour.ws juju-core-slave-b.vapour.ws feature-slave.vapour.ws release-slave.vapour.ws lxd-slave-b.vapour.ws
+Host xenial-slave.vapour.ws wily-slave.vapour.ws trusty-slave.vapour.ws precise-slave.vapour.ws juju-core-slave.vapour.ws juju-core-slave-b.vapour.ws feature-slave.vapour.ws release-slave.vapour.ws lxd-slave-b.vapour.ws long-running-test.vapour.ws
   User jenkins
   ForwardAgent yes
   IdentityFile ~/dev/cloud-city/staging-juju-rsa
