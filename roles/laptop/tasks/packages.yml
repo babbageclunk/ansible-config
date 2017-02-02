@@ -110,6 +110,7 @@
     - RBTools
     - pywinrm
     - dateutils
+    - gimp
 
 - name: python3 packages
   become: yes
