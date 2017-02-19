@@ -82,3 +82,12 @@
     - {repo: juju-ci-tools, dest: juju-ci-tools}
     - {repo: juju-ci-tools/repository, dest: repository}
     - {repo: ~juju-qa/+junk/cloud-city, dest: cloud-city}
+
+# Sometimes when linking juju we run out of memory completely - kill
+# the linker instead of hanging.
+# See http://askubuntu.com/questions/398236/oom-killer-not-working
+- name: make OOM killer kill compile
+  become: yes
+  lineinfile:
+    dest: /etc/sysctl.conf
+    line: 'vm.oom_kill_allocating_task = 1'
