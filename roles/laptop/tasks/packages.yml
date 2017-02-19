@@ -93,6 +93,7 @@
     - indicator-keylock
     - binutils
     - indicator-notifications
+    - gimp
 
 - name: upgrade pip
   become: yes
@@ -110,7 +111,6 @@
     - RBTools
     - pywinrm
     - dateutils
-    - gimp
 
 - name: python3 packages
   become: yes
