@@ -11,3 +11,5 @@ function lxbash() {
 }
 
 alias jst='watch --color juju status --color'
+
+alias j1='~/1.25/juju'
