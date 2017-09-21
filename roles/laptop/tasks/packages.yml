@@ -94,6 +94,8 @@
     - binutils
     - indicator-notifications
     - gimp
+    - cloud-utils
+    - python-novaclient
 
 - name: upgrade pip
   become: yes
