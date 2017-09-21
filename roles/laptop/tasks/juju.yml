@@ -77,11 +77,10 @@
 
 # If this fails it's probably waiting for access to the ssh key - unlock it.
 - name: CI tools
-  bzr: name=lp:{{item.repo}} dest=~/dev/{{item.dest}}
+  git: repo={{item.repo}} dest=~/dev/{{item.dest}}
   with_items:
-    - {repo: juju-ci-tools, dest: juju-ci-tools}
-    - {repo: juju-ci-tools/repository, dest: repository}
-    - {repo: ~juju-qa/+junk/cloud-city, dest: cloud-city}
+    - repo: git+ssh://2-xtian@git.launchpad.net/~juju-qa/+git/cloud-city
+      dest: cloud-city
 
 # Sometimes when linking juju we run out of memory completely - kill
 # the linker instead of hanging.
