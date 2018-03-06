@@ -14,11 +14,16 @@
     - 'deb http://linux.dropbox.com/ubuntu xenial main'
     - 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main'
     - ppa:tmate.io/archive
-    - ppa:ubuntu-lxc/lxd-stable
     - ppa:maas-maintainers/experimental3
     - ppa:jconti/recent-notifications
     - 'deb-src http://gb.archive.ubuntu.com/ubuntu/ xenial main restricted'
     - 'deb-src http://gb.archive.ubuntu.com/ubuntu/ xenial-updates main restricted'
+
+- name: remove dead apt repos
+  become: yes
+  apt_repository: repo='{{ item }}' state=absent
+  with_items:
+    - ppa:ubuntu-lxc/lxd-stable
 
 - name: build dependencies
   become: yes
