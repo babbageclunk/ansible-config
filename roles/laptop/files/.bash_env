@@ -1,6 +1,6 @@
 export EDITOR=emacsclient
 export GOPATH=/opt/go
-export GOROOT=/usr/local/go
-export PATH=${GOPATH}/bin:/usr/local/go/bin:$PATH
+export GOROOT=/snap/go/current
+export PATH=${GOPATH}/bin:${GOROOT}/bin:$PATH
 export JUJU_MAKE_GODEPS=true
 export JUJU_DEV_FEATURE_FLAGS=cross-model,developer-mode

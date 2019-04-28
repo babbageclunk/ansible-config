@@ -4,10 +4,11 @@ function workon() {
     source ~/venv/$1/bin/activate
 }
 
-alias lxcl='lxc list | grep -v -e -------'
+alias lxc=lxd.lxc
+alias lxcl='lxd.lxc list | grep -v -e -------'
 
 function lxbash() {
-    lxc exec $1 bash
+    lxd.lxc exec $1 bash
 }
 
 alias jst='watch --color juju status --color'
