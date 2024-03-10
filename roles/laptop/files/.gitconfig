@@ -1,6 +1,6 @@
 [user]
 	name = Christian Muirhead
-	email = christian.muirhead@canonical.com
+	email = christian.muirhead@microsoft.com
 [color]
 	ui = true
 [alias]
@@ -16,3 +16,9 @@
 	autosetuprebase = always
 [push]
 	default = simple
+[url "msazure@vs-ssh.visualstudio.com:v3/msazure/CloudNativeCompute"]
+	insteadOf = https://dev.azure.com/msazure/CloudNativeCompute/_git
+[merge]
+	conflictStyle = diff3
+[url "git@ssh.dev.azure.com:v3/msazure/CloudNativeCompute"]
+	insteadOf = https://dev.azure.com/msazure/CloudNativeCompute/_git

@@ -1,6 +1,16 @@
 export EDITOR=emacsclient
-export GOPATH=/opt/go
+export GOPATH=/home/xtian/dev/go
+export GO111MODULE=on
 export GOROOT=/snap/go/current
-export PATH=${GOPATH}/bin:${GOROOT}/bin:$PATH
+export PATH=${GOPATH}/bin:${GOROOT}/bin:$PATH:/usr/local/kubebuilder/bin
 export JUJU_MAKE_GODEPS=true
 export JUJU_DEV_FEATURE_FLAGS=cross-model,developer-mode
+# Not sure why this is needed under wsl2 but without it emacs segfaults.
+
+export FONTCONFIG_PATH=/etc/fonts
+#export DISPLAY=$(ip route | awk '/default via / {print $3; exit}'):0.0
+
+source ~/.bash_env_private_aks_goproxy_token
+export GOPROXY=https://chmuirhe:$AKS_GOPROXY_TOKEN@goproxyprod.goms.io
+export GOPRIVATE="goms.io/aks/*,go.goms.io/aks/*,go.goms.io/fleet*"
+export GONOPROXY=none

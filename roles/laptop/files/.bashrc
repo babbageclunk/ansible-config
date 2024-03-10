@@ -124,3 +124,12 @@ fi
 
 source ~/dev/bash-git-prompt/gitprompt.sh
 GIT_PROMPT_ONLY_IN_REPO=1
+export PATH=$PATH:~/openshift
+source <(kubectl completion bash)
+
+export PATH=$PATH:/home/xtian/bin
+
+#source '/home/xtian/lib/azure-cli/az.completion'
+alias k=kubectl
+complete -F __start_kubectl k
+source "$HOME/.cargo/env"

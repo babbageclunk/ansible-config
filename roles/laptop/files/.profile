@@ -25,4 +25,6 @@ if [ -f ~/.bash_env ]; then
     . ~/.bash_env
 fi
 
-export PATH="$HOME/.cargo/bin:$PATH"
+source "$HOME/.cargo/env"
+
+export PATH="/home/xtian/.local/bin:$PATH"
