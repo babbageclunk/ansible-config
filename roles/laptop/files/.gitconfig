@@ -22,3 +22,7 @@
 	conflictStyle = diff3
 [url "git@ssh.dev.azure.com:v3/msazure/CloudNativeCompute"]
 	insteadOf = https://dev.azure.com/msazure/CloudNativeCompute/_git
+[credential]
+	helper = /mnt/c/Program\\ Files/Git/mingw64/bin/git-credential-manager.exe
+[credential "https://dev.azure.com"]
+	useHttpPath = true

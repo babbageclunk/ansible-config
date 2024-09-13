@@ -14,3 +14,6 @@ source ~/.bash_env_private_aks_goproxy_token
 export GOPROXY=https://chmuirhe:$AKS_GOPROXY_TOKEN@goproxyprod.goms.io
 export GOPRIVATE="goms.io/aks/*,go.goms.io/aks/*,go.goms.io/fleet*"
 export GONOPROXY=none
+
+# opam configuration
+test -r /home/xtian/.opam/opam-init/init.sh && . /home/xtian/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true

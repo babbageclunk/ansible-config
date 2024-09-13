@@ -34,3 +34,9 @@ alias all-az-resources='kubectl api-resources -o name | grep azure.com | paste -
 
 alias aksdev=/home/xtian/dev/rp/bin/aksdev
 alias aksbuilder=/home/xtian/dev/rp/hack/aksbuilder.sh
+
+function say() {
+    powershell.exe "Add-Type -AssemblyName System.speech;(New-Object System.Speech.Synthesis.SpeechSynthesizer).Speak(\"$1\")"
+}
+
+alias onlyjson="jq -R 'fromjson? | select(type == \"object\")'"
