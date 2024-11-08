@@ -14,3 +14,4 @@ unset AKS_GOPROXY_TOKEN
 export GONOPROXY='github.com,golang.org,googlesource.com,opentelemetry.io,uber.org'
 export GOPRIVATE='goms.io,*.goms.io'
 export GOPROXY='https://goproxyprod.goms.io'
+export __AKS_DOCKER_BUILD_MOUNT_NETRC=1
